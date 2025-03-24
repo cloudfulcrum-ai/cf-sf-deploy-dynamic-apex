@@ -1,10 +1,10 @@
 # Deploy Dynamic Apex
 
-This repository contain GitHub Action designed to automate Salesforce deployment task. The action is packaged as a Docker container and provides a specialized function.
+    This repository contain GitHub Action designed to automate Salesforce deployment task. The action is packaged as a Docker container and provides a specialized function.
 
 **cf-sf-deploy-dynamic-apex**
 
-    Deploys Apex classes dynamically based on repository changes.
+    Deploys metadata and runs Apex classes dynamically based on repository changes with the “Dynamic Apex” parameter.
 
 * **Inputs**:
     * **apex-directory**: Directory containing Apex classes.
@@ -12,7 +12,7 @@ This repository contain GitHub Action designed to automate Salesforce deployment
 Usage Example:
 
     - name: Deploy Apex Classes
-      uses: ghcr.io/itfulcrum/cf-sf-deploy-dynamic-apex@latest
+      uses: ghcr.io/cloudfulcrum-ai/cf-sf-deploy-dynamic-apex@latest
       with:
         apex-directory: "./src/classes"
 
